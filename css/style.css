@@ -11,5 +11,86 @@
 
     --sub-text-color:#353535;
 
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter";
+}
 
+#container{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #353535;
+}
+
+
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-background-color);
+    padding: 20px;
+
+}
+#header h1{
+    text-align: center;
+    font-family: "Inter";
+    font-weight: bolder;
+    font-size: 28px;
+    color: var(--main-text-color);
+    margin-bottom: 30px;
+}
+
+#header input[type="text"]{
+    display: block;
+    width: 117px;
+    height: 83px;
+    background-color: transparent;
+    border: 1px solid var(--main-stroke-color);
+    border-radius: 5px;
+    font-family: "Inter";
+    font-size: 58px;
+    text-align: center;
+    font-weight: bolder;
+    color: var(--main-text-color);
+}
+
+
+#header button{
+    display: block;
+    color: var(--main-btn-text-color);
+    background-color: var(--main-btn-background-color);
+    border: 0;
+    padding: 9px 27px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+#content{
+    background-color: var(--secondry-background-color);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.unit-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.unit-card h2{
+    color: var(--secondry-text-color);
+    font-weight:500;
+    margin-bottom: 9px;
+}
+
+.unit-card p{
+    color: var(--sub-text-color);
 }
