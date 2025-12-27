@@ -10,8 +10,29 @@
     --secondry-text-color:#5A537B;
 
     --sub-text-color:#353535;
+    
+    --card-background-color:#FFFFFF
 
 }
+
+
+
+.darkmode{
+    --main-background-color:#6943FF;
+    --main-text-color:#ffffff;
+    --main-stroke-color:#B295FF;
+    --secondry-background-color:#1F2937;
+
+    --main-btn-background-color:#ffffff;
+    --main-btn-text-color:#3D3D3D;
+
+    --secondry-text-color:#CCC1FF;
+
+    --sub-text-color:#FFFFFF;
+
+    --card-background-color:#273549;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -81,7 +102,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffffff;
+    background-color: var(--card-background-color);
 }
 
 .unit-card h2{
@@ -92,4 +113,38 @@ body{
 
 .unit-card p{
     color: var(--sub-text-color);
+}
+
+
+
+#theme-switch{
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--base-varient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+
+#theme-switch svg{
+    fill: var(--main-bg-color);
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child{
+    display: block;
 }
